@@ -14,6 +14,7 @@ def runner(event, zipf, endword, password):
     except:
         pass
     if password == endword:
+        print('No password found.')
         event.set()
 
 def crack_zip(zipf_name, wordlist, processes=15):
